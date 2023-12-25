@@ -1,0 +1,108 @@
+/* Typrfaces*/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400...700&display=swap');
+
+@font-face {
+    src: url('fonts/HelveticaNowVar.woff2') format('woff2-variations');
+    font-family: 'Helvetica Now Var';
+    font-style: normal;
+}
+
+@font-face {
+    src: url('fonts/HelveticaNowVar-Italic.woff2') format('woff2-variations');
+    font-family: 'Helvetica Now Var';
+    font-style: italic;
+}
+
+:root {
+    --color-text-primary: rgba(255, 255, 255, 0.95);
+    --color-text-secondary: rgba(255, 255, 255, 0.65);
+    --color-text-tetiary: rgba(255, 255, 255, 0.35);
+
+    --color-background: rgba(0, 0, 16, 1);
+}
+
+
+* {
+    font-family: "Helvetica Now Var", "SF Pro", "Noto Sans SC", -apple-system, sans-serif;
+    font-optical-sizing: auto;
+}
+
+html {
+    background-color: hsla(107, 0%, 0%, 1);
+    background-image:
+        radial-gradient(at 34% 59%, hsla(245, 98%, 12%, 1) 0px, transparent 50%),
+        radial-gradient(at 7% 88%, hsla(78, 76%, 12%, 1) 0px, transparent 50%),
+        radial-gradient(at 75% 96%, hsla(299, 67%, 12%, 1) 0px, transparent 50%),
+        radial-gradient(at 16% 58%, hsla(152, 93%, 12%, 1) 0px, transparent 50%),
+        radial-gradient(at 59% 16%, hsla(250, 89%, 12%, 1) 0px, transparent 50%),
+        radial-gradient(at 70% 93%, hsla(211, 83%, 12%, 1) 0px, transparent 50%),
+        radial-gradient(at 5% 50%, hsla(146, 62%, 12%, 1) 0px, transparent 50%);
+    color: var(--color-text-primary);
+}
+
+body {
+    margin: auto;
+}
+
+
+#navbar {
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(32px);
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom-width: 1px;
+    border-bottom-color: gray;
+    border-bottom-style: solid;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.wrapper {
+    height: 96px;
+    width: 75%;
+    max-width: 800px;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-flow: row nowrap;
+    gap: 20px;
+}
+
+.wrapper>* {
+    flex-grow: 0;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: var(--color-text-primary);
+    font-size: 16.00px
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+    font-weight: 700;
+    flex-grow: 1;
+}
+
+#content {
+    margin: auto;
+    margin-top: 96px;
+    width: 75%;
+    max-width: 960px;
+    min-width: 360px;
+    display: block;
+
+}
+
+.extraHeadline {
+    padding-top: 144px;
+    padding-bottom: 72px;
+    font-size: 72px;
+    text-align: center;
+}
