@@ -1,4 +1,4 @@
-/* Typrfaces*/
+/* Typrfaces */
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400...700&display=swap');
 
@@ -14,18 +14,19 @@
     font-style: italic;
 }
 
+* {
+    font-family: "Helvetica Now Var", "SF Pro", "Noto Sans SC", -apple-system, "Helvetica Neue", sans-serif;
+    font-optical-sizing: auto;
+}
+
+/* Default Colors */
+
 :root {
     --color-text-primary: rgba(255, 255, 255, 0.95);
     --color-text-secondary: rgba(255, 255, 255, 0.65);
     --color-text-tetiary: rgba(255, 255, 255, 0.35);
 
     --color-background: rgba(0, 0, 16, 1);
-}
-
-
-* {
-    font-family: "Helvetica Now Var", "SF Pro", "Noto Sans SC", -apple-system, sans-serif;
-    font-optical-sizing: auto;
 }
 
 html {
@@ -90,6 +91,10 @@ body {
     flex-grow: 1;
 }
 
+#button {
+    background: none;
+}
+
 #content {
     margin: auto;
     margin-top: 96px;
@@ -105,4 +110,33 @@ body {
     padding-bottom: 144px;
     font-size: 72px;
     text-align: center;
+}
+
+.mobileWrapper {
+    display: none;
+}
+
+.mobileWrapper a {
+    text-decoration: none;
+    color: var(--color-text-primary);
+    font-size: 24px;
+}
+
+@media(max-width: 800px) {
+    #navbar a {
+        display: none;
+    }
+
+    .extraHeadline {
+        padding-top: 96px;
+        padding-bottom: 96px;
+        font-size: 48px;
+    }
+
+    .mobileWrapper {
+        display: flex;
+        align-items: flex-end;
+        flex-flow: column nowrap;
+        gap: 10px
+    }
 }
