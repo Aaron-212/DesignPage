@@ -86,8 +86,6 @@ body {
 .logo {
     display: flex;
     align-items: center;
-    font-size: 32px;
-    font-weight: 700;
     flex-grow: 1;
 }
 
