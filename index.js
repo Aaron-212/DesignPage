@@ -4,22 +4,22 @@ const tl = gsap.timeline();
 tl.fromTo(".wrapper",
     {
         height: "96px",
-        width: "75%",
         maxWidth: "800px"
     },
     {
         height: "64px",
-        width: "75%",
         maxWidth: "960px"
     },
 ).fromTo("#navbar",
     {
         backgroundColor: "rgba(0, 0, 0, 0)",
         borderBottomColor: "rgba(128, 128, 128, 0)",
+        backdropFilter:" blur(0px)",
     },
     {
         backgroundColor: "rgba(0, 0, 0, 0.5)",
         borderBottomColor: "rgba(128, 128, 128, 1)",
+        backdropFilter:" blur(50px)",
     },
     '<'
 ).fromTo("#navbar a",
