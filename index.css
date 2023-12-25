@@ -63,6 +63,7 @@ body {
 .wrapper {
     height: 96px;
     width: 75%;
+    min-width: 320px;
     max-width: 800px;
     margin: auto;
 
@@ -98,7 +99,7 @@ body {
     margin-top: 96px;
     width: 75%;
     max-width: 960px;
-    min-width: 360px;
+    min-width: 320px;
     display: block;
 
 }
@@ -120,7 +121,7 @@ body {
     font-size: 24px;
 }
 
-@media(max-width: 800px) {
+@media(max-width: 640px) {
     #navbar a {
         display: none;
     }
@@ -130,6 +131,7 @@ body {
         padding-bottom: 96px;
         font-size: 48px;
     }
+    
 
     .mobileWrapper {
         display: flex;
