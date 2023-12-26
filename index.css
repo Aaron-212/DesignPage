@@ -11,6 +11,7 @@
 * {
     font-family: "Helvetica Now Var", "SF Pro", "Noto Sans SC", -apple-system, "Helvetica Neue", sans-serif;
     font-optical-sizing: auto;
+    font-smooth: auto;
     word-wrap: break-word;
     
 }
@@ -64,6 +65,6 @@ hr {
 
 .footer {
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 200;
     text-align: center;
 }
