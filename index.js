@@ -80,11 +80,9 @@ function setScrollAnimation() {
     if (window.innerWidth >= 640) {
         scrolltrlarge.enable();
         scrolltrsmall.disable();
-        console.log("L");
     } else {
         scrolltrlarge.disable();
         scrolltrsmall.enable();
-        console.log("S");
     }
 }
 
