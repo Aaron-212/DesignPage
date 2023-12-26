@@ -17,7 +17,7 @@ scrolltllarge.fromTo(".wrapper",
     },
     {
         backgroundColor: "rgba(0, 0, 0, 0.5)",
-        borderBottomColor: "rgba(128, 128, 128, 1)",
+        borderBottomColor: "rgba(128, 128, 128, 0.5)",
     },
     '<'
 ).fromTo("#navbar a",
@@ -52,7 +52,7 @@ scrolltlsmall.fromTo(".wrapper",
     },
     {
         backgroundColor: "rgba(0, 0, 0, 0.5)",
-        borderBottomColor: "rgba(128, 128, 128, 1)",
+        borderBottomColor: "rgba(128, 128, 128, 0.5)",
     },
     '<'
 ).fromTo("#navbar a",
