@@ -1,0 +1,60 @@
+#navbar {
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(32px);
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom-width: 1px;
+    border-bottom-color: gray;
+    border-bottom-style: solid;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.wrapper {
+    height: 96px;
+    width: 75%;
+    min-width: 320px;
+    max-width: 800px;
+    margin: auto;
+    padding-top: 16px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: end;
+    flex-flow: column nowrap;
+    gap: 10px;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: var(--color-text-primary);
+    font-size: 16.00px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+}
+
+#button {
+    background: none;
+}
+
+#content {
+    margin: auto;
+    margin-top: 160px;
+    width: 75%;
+    max-width: 960px;
+    min-width: 320px;
+    display: block;
+
+}
+
+.extraHeadline {
+    padding-top: 96px;
+    padding-bottom: 96px;
+    font-size: 48px;
+    text-align: center;
+}
