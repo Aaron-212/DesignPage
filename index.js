@@ -3,7 +3,7 @@
 const scrolltllarge = new gsap.timeline();
 scrolltllarge.fromTo(".wrapper",
     {
-        height: "96px",
+        height: "200px",
         maxWidth: "800px"
     },
     {
