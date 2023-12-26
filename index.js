@@ -70,7 +70,7 @@ scrolltlsmall.fromTo(".wrapper",
 scrolltrsmall = ScrollTrigger.create({
     trigger: ".wrapper",
     start: 0,
-    end: 128,
+    end: 160,
     animation: scrolltlsmall,
     scrub: 0.5,
     repeat: -1,

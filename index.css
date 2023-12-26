@@ -11,6 +11,8 @@
 * {
     font-family: "Helvetica Now Var", "SF Pro", "Noto Sans SC", -apple-system, "Helvetica Neue", sans-serif;
     font-optical-sizing: auto;
+    word-wrap: break-word;
+    
 }
 
 /* Default Colors */
@@ -20,22 +22,44 @@
     --color-text-secondary: rgba(255, 255, 255, 0.65);
     --color-text-tetiary: rgba(255, 255, 255, 0.35);
 
-    --color-background: rgba(0, 0, 16, 1);
+    --color-background: rgba(16, 16, 18, 1);
 }
 
 html {
-    background-color: hsla(107, 0%, 0%, 1);
+    /*background: var(--color-background);*/
+    background-color:hsla(167,0%,0%,1);
     background-image:
-        radial-gradient(at 34% 59%, hsla(245, 98%, 12%, 1) 0px, transparent 50%),
-        radial-gradient(at 7% 88%, hsla(78, 76%, 12%, 1) 0px, transparent 50%),
-        radial-gradient(at 75% 96%, hsla(299, 67%, 12%, 1) 0px, transparent 50%),
-        radial-gradient(at 16% 58%, hsla(152, 93%, 12%, 1) 0px, transparent 50%),
-        radial-gradient(at 59% 16%, hsla(250, 89%, 12%, 1) 0px, transparent 50%),
-        radial-gradient(at 70% 93%, hsla(211, 83%, 12%, 1) 0px, transparent 50%),
-        radial-gradient(at 5% 50%, hsla(146, 62%, 12%, 1) 0px, transparent 50%);
+    radial-gradient(at 32% 70%, hsla(228,100%,15%,1) 0px, transparent 50%),
+    radial-gradient(at 26% 27%, hsla(246,100%,15%,1) 0px, transparent 50%),
+    radial-gradient(at 6% 74%, hsla(100,100%,15%,1) 0px, transparent 50%),
+    radial-gradient(at 57% 38%, hsla(228,100%,15%,1) 0px, transparent 50%),
+    radial-gradient(at 41% 63%, hsla(290,100%,15%,1) 0px, transparent 50%),
+    radial-gradient(at 72% 84%, hsla(228,100%,15%,1) 0px, transparent 50%),
+    radial-gradient(at 73% 63%, hsla(137,100%,15%,1) 0px, transparent 50%);
     color: var(--color-text-primary);
+}
+
+#background {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    color: black;
 }
 
 body {
     margin: auto;
+}
+
+hr {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    border-width: 1px;
+    border-color: rgba(128, 128, 128, 0.5);
+}
+
+.footer {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
 }
