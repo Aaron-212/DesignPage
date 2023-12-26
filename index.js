@@ -35,7 +35,7 @@ scrolltrlarge = ScrollTrigger.create({
     repeat: -1,
 })
 
-const scrolltlsmall = new gsap.timeline();
+const scrolltlsmall = new gsap.timeline({});
 scrolltlsmall.fromTo(".wrapper",
     {
         height: "200px",
@@ -76,17 +76,23 @@ scrolltrsmall = ScrollTrigger.create({
     repeat: -1,
 })
 
-
-window.onresize = function (event) {
-    if (screen.width >= 640) {
+function setScrollAnimation() {
+    if (window.innerWidth >= 640) {
         scrolltrlarge.enable();
         scrolltrsmall.disable();
+        console.log("L");
     } else {
         scrolltrlarge.disable();
         scrolltrsmall.enable();
+        console.log("S");
     }
-};
+}
 
+setScrollAnimation();
+
+window.addEventListener("resize", function () {
+    setScrollAnimation();
+})
 
 
 // Sample Text
