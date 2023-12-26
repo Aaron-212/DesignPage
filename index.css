@@ -8,12 +8,6 @@
     font-style: normal;
 }
 
-@font-face {
-    src: url('fonts/HelveticaNowVar-Italic.woff2') format('woff2-variations');
-    font-family: 'Helvetica Now Var';
-    font-style: italic;
-}
-
 * {
     font-family: "Helvetica Now Var", "SF Pro", "Noto Sans SC", -apple-system, "Helvetica Neue", sans-serif;
     font-optical-sizing: auto;

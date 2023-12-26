@@ -39,11 +39,11 @@ const scrolltlsmall = new gsap.timeline({});
 scrolltlsmall.fromTo(".wrapper",
     {
         height: "200px",
-        gap: "10px"
+        gap: "10.00px"
     },
     {
         height: "64px",
-        gap: "0px"
+        gap: "0.00px"
     },
 ).fromTo("#navbar",
     {
