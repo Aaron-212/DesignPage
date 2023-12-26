@@ -38,7 +38,7 @@ scrolltrlarge = ScrollTrigger.create({
 const scrolltlsmall = new gsap.timeline();
 scrolltlsmall.fromTo(".wrapper",
     {
-        height: "240px",
+        height: "200px",
         gap: "10px"
     },
     {
